@@ -1,7 +1,7 @@
 
 
 ---
-title: 'Point a custom SharePoint form to the "Add new item" button on a List'
+title: 'Point a custom SharePoint form to the "Add new item" button'
 description: "Use a custom SharePoint form as the default 'Add new item' form by updating the ContentType.NewFormUrl property."
 publishDate: "19 December 2025"
 tags: ["sharepoint", "list", "pnp", "powershell", "forms"]
