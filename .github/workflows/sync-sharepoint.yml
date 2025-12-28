@@ -1,0 +1,42 @@
+name: Sync SharePoint to Blog
+
+on:
+  schedule:
+    # Esegui ogni ora (puoi modificare)
+    - cron: '0 * * * *'
+  workflow_dispatch: # Permette esecuzione manuale
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Sync from SharePoint
+        env:
+          TENANT_ID: ${{ secrets.TENANT_ID }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          SITE_ID: ${{ secrets.SITE_ID }}
+          LIST_ID: ${{ secrets.LIST_ID }}
+        run: npm run sync
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/content/post/*.md
+          git diff --staged --quiet || git commit -m "🔄 Sync articles from SharePoint"
+          git push
