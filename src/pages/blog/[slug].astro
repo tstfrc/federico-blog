@@ -1,0 +1,23 @@
+---
+import { getArticles } from "../../lib/sharepoint";
+
+export async function getStaticPaths() {
+	const articles = await getArticles();
+
+	return articles
+		.filter((a) => a.isPublished)
+		.map((article) => ({
+			params: { slug: article.slug },
+			props: { article },
+		}));
+}
+
+const { article } = Astro.props;
+---
+
+<h1>{article.title}</h1>
+<p>{article.excerpt}</p>
+
+<article>
+	<Markdown content={article.content} />
+</article>
