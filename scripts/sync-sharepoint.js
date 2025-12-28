@@ -13,7 +13,7 @@ const siteId = process.env.SITE_ID;
 const listId = process.env.LIST_ID;
 
 // Debug: verifica che le variabili siano caricate
-console.log('🔑 Configurazione:');
+console.log('Configuration check:');
 console.log('- TENANT_ID:', tenantId ? '✓' : '✗');
 console.log('- CLIENT_ID:', clientId ? '✓' : '✗');
 console.log('- CLIENT_SECRET:', clientSecret ? '✓' : '✗');
@@ -22,7 +22,7 @@ console.log('- LIST_ID:', listId ? '✓' : '✗');
 console.log('');
 
 async function syncArticles() {
-  console.log('🔄 Inizio sincronizzazione con SharePoint...');
+  console.log('🔄 Start SharePoint sync...');
 
   try {
     // Autenticazione
@@ -41,7 +41,7 @@ async function syncArticles() {
       .filter("fields/IsPublished eq 'Publish'")
       .get();
 
-    console.log(`📝 Trovati ${response.value.length} articoli pubblicati`);
+    console.log(`📝 Found ${response.value.length} published articles`);
 
     // Cartella dove salvare i post
     const postsDir = path.join(process.cwd(), 'src', 'content', 'post');
@@ -96,12 +96,12 @@ ${fields.Content || ''}
       const filepath = path.join(postsDir, filename);
       
       fs.writeFileSync(filepath, frontmatter);
-      console.log(`✅ Creato/aggiornato: ${filename}`);
+      console.log(`✅ Article created: ${filename}`);
     }
 
-    console.log('✨ Sincronizzazione completata!');
+    console.log('✅ Sync completed!');
   } catch (error) {
-    console.error('❌ Errore durante la sincronizzazione:', error.message);
+    console.error('❌ Error during sync:', error.message);
     throw error;
   }
 }

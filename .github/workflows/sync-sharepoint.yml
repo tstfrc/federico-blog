@@ -2,9 +2,11 @@ name: Sync SharePoint to Blog
 
 on:
   schedule:
-    # Esegui ogni ora (puoi modificare)
     - cron: '0 * * * *'
-  workflow_dispatch: # Permette esecuzione manuale
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 👈 QUESTO È IL FIX
 
 jobs:
   sync-and-deploy:
@@ -13,8 +15,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
