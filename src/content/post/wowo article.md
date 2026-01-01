@@ -1,7 +1,7 @@
 ---
 title: "wow article"
 description: ""
-publishDate: "2026-01-01T09:22:24.867Z"
+publishDate: "2026-01-01T10:20:04.026Z"
 
 tags: []
 ---
