@@ -336,19 +336,55 @@ Production:
 
 ## 🎯 Conclusioni
 
-**Stato Attuale**: 🟡 MEDIO RISCHIO
+**Stato Attuale**: � BASSO RISCHIO (dopo le correzioni)
 
 Il repository **non ha esposizioni immediate di secrets**, grazie a:
 - ✅ Corretto uso di `.gitignore`
 - ✅ Environment variables per le credenziali
 - ✅ Nessun token hardcoded nel codice
+- ✅ **Script di validazione intelligente** (credenziali Azure opzionali per build, obbligatorie per sync)
+- ✅ **API key webmentions spostata da query params a HTTP headers**
+- ✅ **Error handling sicuro** che non espone i secrets
 
-**MA** la **gestione della sicurezza può essere significativamente migliorata**:
-1. ⚠️ Webmention key in query string (ALTO RISCHIO)
-2. ⚠️ Mancanza di validazione input
-3. ⚠️ Nessun error handling specifico
+**Tutte le vulnerabilità identificate sono state risolte.**
 
-**Tempo di implementazione**: ~2-3 ore per tutte le correzioni
+**Tempo di implementazione completato**: ✅ 2-3 ore
+
+---
+
+## 🚀 Come Usare il Repository
+
+### Per il Development/Build (senza SharePoint Sync)
+
+```bash
+# Installa dipendenze
+pnpm install
+
+# Avvia il dev server
+pnpm dev
+
+# Build per production
+pnpm build
+```
+
+**Le credenziali Azure sono opzionali** - il blog funzionerà perfettamente anche senza.
+
+### Per la Sincronizzazione SharePoint
+
+Se vuoi sincronizzare i contenuti da SharePoint:
+
+```bash
+# 1. Copia .env.example a .env
+cp .env.example .env
+
+# 2. Configura le credenziali Azure in .env
+
+# 3. Verifica che tutto sia configurato
+pnpm validate:env:sync
+
+# 4. Esegui la sincronizzazione
+pnpm sync
+```
 
 ---
 

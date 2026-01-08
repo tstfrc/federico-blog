@@ -6,6 +6,7 @@
 	"scripts": {
 		"postinstall": "npm rebuild sharp --force",
 		"validate:env": "node scripts/validate-env.js",
+		"validate:env:sync": "node scripts/validate-env.js --sync",
 		"predev": "npm run validate:env",
 		"dev": "astro dev",
 		"start": "astro dev",
@@ -16,7 +17,7 @@
 		"check": "astro check && biome check",
 		"lint": "biome check --write",
 		"format": "prettier -w . --cache",
-		"sync": "npm run validate:env && node scripts/sync-sharepoint.js"
+		"sync": "npm run validate:env:sync && node scripts/sync-sharepoint.js"
 	},
 	"dependencies": {
 		"@astrojs/markdown-remark": "^6.3.9",
