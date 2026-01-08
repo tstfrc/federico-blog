@@ -21,11 +21,15 @@ async function fetchWebmentions(timeFrom: string | null, perPage = 1000) {
 		return null;
 	}
 
-	let url = `https://webmention.io/api/mentions.jf2?domain=${hostName}&token=${WEBMENTION_API_KEY}&sort-dir=up&per-page=${perPage}`;
+	let url = `https://webmention.io/api/mentions.jf2?domain=${hostName}&sort-dir=up&per-page=${perPage}`;
 
 	if (timeFrom) url += `&since${timeFrom}`;
 
-	const res = await fetch(url);
+	const res = await fetch(url, {
+		headers: {
+			'Authorization': `Bearer ${WEBMENTION_API_KEY}`
+		}
+	});
 
 	if (res.ok) {
 		const data = (await res.json()) as WebmentionsFeed;

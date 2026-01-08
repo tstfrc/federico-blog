@@ -84,10 +84,16 @@ pnpm install
 
 3. Create a `.env` file (if needed for SharePoint sync):
 ```env
+# Copy from .env.example and fill with your credentials
 AZURE_TENANT_ID=your_tenant_id
 AZURE_CLIENT_ID=your_client_id
 AZURE_CLIENT_SECRET=your_client_secret
 SHAREPOINT_SITE_URL=your_site_url
+```
+
+Validate environment variables:
+```bash
+pnpm validate:env
 ```
 
 ### Development
