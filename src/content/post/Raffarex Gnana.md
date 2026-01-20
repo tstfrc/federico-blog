@@ -1,7 +1,7 @@
 ---
 title: "Raffarex Gnagna"
 description: ""
-publishDate: "2026-01-20T18:31:49.099Z"
+publishDate: "2026-01-20T20:09:56.541Z"
 
 tags: ["JSON","SharePoint","Powershell","PowerAutomate"]
 ---
