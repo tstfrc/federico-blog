@@ -1,5 +1,5 @@
 ---
-title: "How to use a Custom SharePoint Form as the Default for the the new list item"
+title: "How to use a Custom SharePoint Form as the Default one"
 description: ""
 publishDate: "2026-01-22T14:27:42.069Z"
 
