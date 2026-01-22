@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Astro: A Test Article"
 description: "This is a sample article written in Markdown to test content rendering in an Astro blog."
-pubDate: 2026-01-22
+date: 2026-01-22
 author: "Your Name"
 tags: ["astro", "blog", "markdown", "test"]
 ---
