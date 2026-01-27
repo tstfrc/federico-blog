@@ -17,7 +17,7 @@ If your only goal is to provide a **custom user interface for item creation**, y
 ---
 
 <video controls>
-  <source src="videos/How to use a Custom SharePoint Form as the Default one.mp4" type="video/mp4" />
+  <source src="/Videos/Video1.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
