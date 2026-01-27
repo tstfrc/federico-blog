@@ -1,5 +1,5 @@
 ---
-title: "Allow users to see and edit only the files they uploaded themselves"
+title: "Allow users to see and edit only the files they uploaded"
 description: "Allow users to see and edit only the files they uploaded themselves"
 publishDate: "2026-01-20T14:27:42.069Z"
 
