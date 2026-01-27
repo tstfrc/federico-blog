@@ -3,7 +3,7 @@ title: "Personalize SharePoint command bar with Json"
 description: "Ghost sites in your Microsoft 365 tenant"
 publishDate: "2025-12-20T14:27:42.069Z"
 
-tags: ["SharePoint","Pnp","Sites","Gotchas", "Security"]
+tags: ["SharePoint","JSON","Sites","Gotchas","UX","UI"]
 ---
 
 ## The problem
@@ -60,3 +60,6 @@ Ensure that users do not have permissions to create custom views as they could o
 In a document library context, for example, hiding the “New” button does not fully prevent file creation since users can still add files via drag & drop.
 
 In a SharePoint list context where drag & drop is not supported this approach becomes a 𝗹𝗼𝘄-𝗰𝗼𝘀𝘁, 𝗹𝗼𝘄-𝗶𝗺𝗽𝗮𝗰𝘁, 𝗵𝗶𝗴𝗵-𝘃𝗮𝗹𝘂𝗲 solution.
+
+## LinkedIn relative post
+https://www.linkedin.com/posts/federicotosetto_sharepoint-powerautomate-sharepoint-activity-7411447348297502720-J2gv?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKJlEABegKcSpQKizAvOzyH46f6JvcIZbM

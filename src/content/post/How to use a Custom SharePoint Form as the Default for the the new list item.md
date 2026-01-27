@@ -53,17 +53,25 @@ Follow these steps to configure your list:
 3. **Run the following commands in PowerShell 7:**
 
 ```powershell
-# Connect to your SharePoint site interactively
+Connect to your SharePoint site interactively
 Connect-PnPOnline -Url "https://TENANTNAME.sharepoint.com/sites/SITENAME" -Interactive -ClientId "clientIDToConnectViaPnP"
+```
 
-# Retrieve the list content type
+Retrieve the list content type
+```powershell
 $Ct = Get-PnPContentType -List "LISTNAME" -Identity "Item"
+```
 
-# Set the NewFormUrl property to your custom form
+Set the NewFormUrl property to your custom form
+```powershell
 $Ct.NewFormUrl = "SitePages/CustomForm.aspx"
+```
 
-# Apply the update
+Apply the update
+```powershell
 $Ct.Update($false)
 Invoke-PnPQuery
+```
 
-```powershell
+## LinkedIn relative post
+https://www.linkedin.com/posts/federicotosetto_sharepoint-sharepoint-activity-7407695318173122560-d6cX?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKJlEABegKcSpQKizAvOzyH46f6JvcIZbM

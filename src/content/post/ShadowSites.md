@@ -62,3 +62,6 @@ This isn't Microsoft's fault: it's a lack of active governance.
 𝘈 𝘴𝘪𝘵𝘦 𝘵𝘩𝘢𝘵 𝘸𝘢𝘴 𝘢 𝘵𝘪𝘤𝘬𝘪𝘯𝘨 𝘴𝘦𝘤𝘶𝘳𝘪𝘵𝘺 𝘵𝘪𝘮𝘦 𝘣𝘰𝘮𝘣.
 
 Did you know about this?
+
+## LinkedIn relative post
+https://www.linkedin.com/posts/federicotosetto_sharepoint-powershell-activity-7404528530329530369-LPRm?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKJlEABegKcSpQKizAvOzyH46f6JvcIZbM
