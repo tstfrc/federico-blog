@@ -1,12 +1,12 @@
 ---
-title: "I never"
+title: "Ghost sites in your Microsoft 365 tenant"
 description: "Ghost sites in your Microsoft 365 tenant"
 publishDate: "2025-12-25T14:27:42.069Z"
 
 tags: ["SharePoint","Pnp","Sites","Gotchas", "Security"]
 ---
 
-# Did you know there could be SarePoint sites shared externally in your tenant that you don't even know exist?
+## Did you know there could be SarePoint sites shared externally in your tenant that you don't even know exist?
 
 Right now, as you're reading this, someone might be accessing your company's data through a sharing link that nobody monitors.
 
@@ -18,7 +18,7 @@ interface.
 
 <img src="/Images/OrphanedSharePointSites.jpg" alt="Static image" />
 
-# The problem
+## The problem
 
 Microsoft 365 accumulates invisible "technical debt" over time.
 Every time a service gets deprecated the old sites could not be automatically deleted. They stay there, with their permissions, sharing links, and content intact.
@@ -27,7 +27,7 @@ If you're implementing (or have already implemented) Microsoft 365 Copilot this 
 
 But I want to give you a practical tip for your environment.
 
-# What to do?
+## What to do?
 
 Check if your tenant still has the site for the old "Office 365 Video Portal" service. It might even have external sharing enabled.
 
