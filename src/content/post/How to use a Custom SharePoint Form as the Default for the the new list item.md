@@ -65,3 +65,5 @@ $Ct.NewFormUrl = "SitePages/CustomForm.aspx"
 # Apply the update
 $Ct.Update($false)
 Invoke-PnPQuery
+
+```powershell
