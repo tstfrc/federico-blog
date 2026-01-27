@@ -1,6 +1,6 @@
 ---
-title: "How to use a Custom SharePoint Form as the Default one"
-description: ""
+title: "Custom SharePoint Form as the Default one"
+description: "Custom SharePoint Form as the Default one"
 publishDate: "2026-01-22T14:27:42.069Z"
 
 tags: ["SharePoint","PnP","List","Gotchas"]
