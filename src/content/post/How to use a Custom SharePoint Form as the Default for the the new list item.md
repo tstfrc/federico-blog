@@ -16,6 +16,12 @@ If your only goal is to provide a **custom user interface for item creation**, y
 
 ---
 
+<video controls>
+  <source src="videos/How to use a Custom SharePoint Form as the Default one.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
 ## Why This Is Useful
 
 Many organizations need lightweight UI customizations — a simpler layout, company branding, specific help text, or prefilled fields — without going full Power Apps.  
@@ -57,5 +63,3 @@ $Ct.NewFormUrl = "SitePages/CustomForm.aspx"
 # Apply the update
 $Ct.Update($false)
 Invoke-PnPQuery
-
-For a quick video demo check this [LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7407695318173122560/).
