@@ -5,7 +5,7 @@
 
 A modern, fast, and accessible blog platform built with **[Astro](https://astro.build)** and customized for Federico Tosetto's blog. Share insights, articles, and notes about Microsoft technologies, modern work, and more.
 
-## 📋 Table of Contents
+## Table of Contents
 
 1. [About](#about)
 2. [Key Features](#key-features)
