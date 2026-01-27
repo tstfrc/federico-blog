@@ -3,7 +3,7 @@ title: "How to use a Custom SharePoint Form as the Default one"
 description: ""
 publishDate: "2026-01-22T14:27:42.069Z"
 
-tags: ["SharePoint","PnP","List"]
+tags: ["SharePoint","PnP","List","Gotchas"]
 ---
 
 # Use a Custom SharePoint Form as the Default "New Item" Form
@@ -15,6 +15,8 @@ I’m a huge fan of *Custom Forms*, truly. They’re powerful and flexible, but 
 If your only goal is to provide a **custom user interface for item creation**, you can skip the Power Platform layer and directly tell SharePoint to use any custom form you like.
 
 ---
+
+## Demo Video
 
 <video controls>
   <source src="/Videos/Video1.mp4" type="video/mp4" />
@@ -37,7 +39,7 @@ Every SharePoint list has one or more **content types**, and each content type i
 By default, this property points to the system form (e.g., `NewForm.aspx`). But you can override it with the URL of your own form.
 
 📚 **Official Microsoft documentation:**  
-[https://learn.microsoft.com/sharepoint/dev/schema/contenttype-element-newformurl](https://lnkd.in/d5CuS24E)
+[https://learn.microsoft.com/sharepoint/dev/schema/contenttype-element-newformurl](https://learn.microsoft.com/en-us/dotnet/api/microsoft.sharepoint.client.contenttype.newformurl?view=sharepoint-csom)
 
 ---
 
