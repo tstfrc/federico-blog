@@ -15,7 +15,6 @@ I recently encountered this challenge and decided to automate it with PowerShell
 Using the PnP PowerShell module I've written a script that performs an intelligent folder comparison between two SharePoint Online Document Libraries.
 In case of 2 duplication how to understand wich one is the right one or dedicede what in official or newer?
 
-<img src="/Images/SharePointDomainNamePlan.jpg" alt="Static image" />
 
 ## What to do?
 
