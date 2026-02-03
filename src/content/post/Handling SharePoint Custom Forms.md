@@ -10,8 +10,6 @@ tags: ["SharePoint","Gotchas","ALM"]
 
 Many people use them because they are intuitive and easy to use, but what about control?
 
-<img src="/Images/SharePointDomainNamePlan.jpg" alt="Static image" />
-
 ## Quick Overview
 
 You can create SharePoint Custom forms to easily customize a form for a SharePoint list that works best for your team or organization, for example by setting a field to read-only.
