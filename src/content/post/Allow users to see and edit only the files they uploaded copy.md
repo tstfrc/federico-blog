@@ -77,4 +77,4 @@ foreach ($user in $users) {
 Stop wasting time on repetitive tasks and start automating your infrastructure today! 🚀
 
 ## LinkedIn relative post
-https://www.linkedin.com/posts/federicotosetto_why-microsoft-doesnt-allow-users-to-see-activity-7418936537641336832-NulQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKJlEABegKcSpQKizAvOzyH46f6JvcIZbM
+https://www.linkedin.com/posts/federicotosetto_are-you-still-removing-hundreds-of-licenses-activity-7429530557304238080-iKNy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKJlEABegKcSpQKizAvOzyH46f6JvcIZbM
