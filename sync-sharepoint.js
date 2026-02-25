@@ -64,7 +64,6 @@ title: "${fields.Title}"
 description: "${fields.Excerpt || ''}"
 publishDate: "${fields.PublishedDate || new Date().toISOString()}"
 tags: ${JSON.stringify(fields.Tags || [])}
-coverImage: "${fields.CoverImage || ''}"
 ---
 
 ${fields.Content || ''}
